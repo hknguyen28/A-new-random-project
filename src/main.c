@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <string.h>
+#include <stdio.h> //include standard input output header file
+#include <string.h> //include string header file, handle string handling functions
 #include "../include/pet.h"
 
 int main() {
@@ -19,7 +19,7 @@ int main() {
         scanf("%d", &choice);
 
         switch (choice) {
-            case 1: feed_pet(&my_pet); break;
+            case 1: feed_pet(&my_pet); break; //break exits the switch statement
             case 2: play_with_pet(&my_pet); break;
             case 3: rest_pet(&my_pet); break;
             case 4: print_pet_status(&my_pet); break;
