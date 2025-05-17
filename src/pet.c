@@ -10,20 +10,20 @@ void print_pet_status(const Pet *pet) {
 
 void feed_pet(Pet *pet) {
     if (pet->hunger > 0) pet->hunger--;
-    printf("%s eats happily! (  ≧ᗜ≦)\n", pet->name);
+    printf("%s eats happily!\n", pet->name);
 }
 
 void play_with_pet(Pet *pet) {
     if (pet->energy > 0) {
         pet->happiness++;
         pet->energy--;
-        printf("%s had fun playing! (  ≧ᗜ≦)\n", pet->name);
+        printf("%s had fun playing!\n", pet->name);
     } else {
-        printf("%s is too tired to play. (⸝⸝ᴗ_ᴗ⸝⸝) z z 𐰁\n", pet->name);
+        printf("%s is too tired to play.\n", pet->name);
     }
 }
 
 void rest_pet(Pet *pet) {
     if (pet->energy < 10) pet->energy++;
-    printf("%s is resting... (⸝⸝ᴗ_ᴗ⸝⸝) z z 𐰁\n", pet->name);
+    printf("%s is resting...\n", pet->name);
 }
